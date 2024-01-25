@@ -1,4 +1,5 @@
-function simpleMultiplication(number) {
+// method 1
+function simpleMultiplication1(number) {
   let result;
   if (number % 2 === 0) {
     result = number * 8;
@@ -7,5 +8,10 @@ function simpleMultiplication(number) {
   }
   return result;
 }
+console.log(simpleMultiplication1(5)) ;
 
-console.log(simpleMultiplication(5)) ;
+// method 2
+function simpleMultiplication2(number) {
+  return (number % 2 === 0 ? number * 8 : number * 9)
+}
+console.log(simpleMultiplication2(5));
