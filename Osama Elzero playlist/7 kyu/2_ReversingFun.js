@@ -1,15 +1,13 @@
 function flipNumber(n) {
     let arr = n.split('')
-    let result = arr[arr.length - 1]
     let reversed = []
-    for (let i = 0; i < arr.length; i++) {
-
-        reversed = arr.reverse(); // 210
-        result.push(reversed[0]); //2
-        reversed.shift([i]);
+    let result = []
+    for (let i = 0; i < n.length; i++) {
+        reversed = arr.reverse();
+        result.push(reversed[0]); 
+        reversed.shift([0]);
     }
-    return result;
-
+    return result.join('');
 }
 
 console.log(flipNumber("012"));
